@@ -1,0 +1,63 @@
+[package]
+name = "message_router"
+edition = "2024"
+publish = false
+
+[lib]
+name = "message_router_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[[bin]]
+name = "message_router_helper"
+
+[features]
+default = ["sandbox"]
+sandbox = ["cef/sandbox"]
+linux-x11 = ["x11-dl"]
+
+[package.metadata.cef.bundle]
+helper_name = "message_router_helper"
+resources_path = "resources"
+
+[dependencies]
+# cef = { path = "../cef-rs/cef", features = [
+#    "build-util",
+# ] }
+# tests_shared = { path = "../cef-rs/examples/tests_shared" }
+
+cef = { git = "https://github.com/tasuren/cef-rs", branch = "message-router-patch", features = [
+    "build-util",
+] }
+tests_shared = { git = "https://github.com/tasuren/cef-rs", branch = "message-router-patch" }
+
+# cef = { git = "https://github.com/tauri-apps/cef-rs", rev = "67387c7f27e33ba8d2a76885e91a776894df843d", features = [
+#     "build-util",
+# ] }
+# tests_shared = { git = "https://github.com/tauri-apps/cef-rs", rev = "67387c7f27e33ba8d2a76885e91a776894df843d" }
+
+clap = "4.5"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+objc2 = "0.6.3"
+objc2-foundation = { version = "0.3.2", features = ["NSString"] }
+objc2-app-kit = { version = "0.3.2", features = [
+    "NSApplication",
+    "NSEvent",
+    "NSResponder",
+    "NSUserInterfaceValidation",
+    "NSView",
+    "NSWindow",
+] }
+semver = "1.0"
+
+[target.'cfg(target_os = "windows")'.dependencies]
+windows-sys = { version = "0.61", features = [
+    "Win32_Foundation",
+    "Win32_UI_WindowsAndMessaging",
+] }
+
+[target.'cfg(target_os = "windows")'.build-dependencies]
+tauri-winres = "0.3.5"
+
+[target.'cfg(target_os = "linux")'.dependencies]
+x11-dl = { version = "2", optional = true }
