@@ -23,7 +23,7 @@ Currently, this port has only been confirmed to work on macOS.
 
 This port is provided under the [Unlicense](LICENSE).
 
-However, this project contains code derived from the
+However, this project contains code and assets derived from the
 [CEF project](https://github.com/chromiumembedded/cef-project)
 and [cef-rs](https://github.com/tauri-apps/cef-rs),
 which is subject to the following license:
