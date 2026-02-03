@@ -28,7 +28,7 @@ However, this project contains code and assets derived from the
 and [cef-rs](https://github.com/tauri-apps/cef-rs),
 which is subject to the following license:
 
-- **cef-project**: [BSD 3-Clause License](third_party/cef-license.txt)
+- **cef-project**: [BSD 3-Clause License](third_party/cef-project-license.txt)
 - **cef-rs**
     - [MIT License](third_party/cef-rs-license-mit.txt)
     - [Apache-2.0 License](third_party/cef-rs-license-apache.txt)
