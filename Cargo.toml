@@ -20,16 +20,13 @@ helper_name = "message_router_helper"
 resources_path = "resources"
 
 [dependencies]
-# cef = { path = "../cef-rs/cef", features = [
-#    "build-util",
-# ] }
-# tests_shared = { path = "../cef-rs/examples/tests_shared" }
-
-cef = { git = "https://github.com/tasuren/cef-rs", branch = "message-router-patch", features = [
+# Patched cef-rs with message router fixes
+cef = { git = "https://github.com/tasuren/cef-rs", branch = "message-router-patch-demo", features = [
     "build-util",
 ] }
-tests_shared = { git = "https://github.com/tasuren/cef-rs", branch = "message-router-patch" }
+tests_shared = { git = "https://github.com/tasuren/cef-rs", branch = "message-router-patch-demo" }
 
+# Original cef-rs v144.3.0+144.0.12
 # cef = { git = "https://github.com/tauri-apps/cef-rs", rev = "67387c7f27e33ba8d2a76885e91a776894df843d", features = [
 #     "build-util",
 # ] }

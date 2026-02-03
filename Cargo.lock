@@ -167,7 +167,7 @@ dependencies = [
 [[package]]
 name = "cef"
 version = "144.3.0+144.0.12"
-source = "git+https://github.com/tasuren/cef-rs?branch=message-router-patch#e61fed1564249e59aaff714333cda7832efdb5d4"
+source = "git+https://github.com/tasuren/cef-rs?branch=message-router-patch-demo#e61fed1564249e59aaff714333cda7832efdb5d4"
 dependencies = [
  "anyhow",
  "cargo_metadata",
@@ -186,7 +186,7 @@ dependencies = [
 [[package]]
 name = "cef-dll-sys"
 version = "144.3.0+144.0.12"
-source = "git+https://github.com/tasuren/cef-rs?branch=message-router-patch#e61fed1564249e59aaff714333cda7832efdb5d4"
+source = "git+https://github.com/tasuren/cef-rs?branch=message-router-patch-demo#e61fed1564249e59aaff714333cda7832efdb5d4"
 dependencies = [
  "anyhow",
  "cmake",
@@ -358,7 +358,7 @@ dependencies = [
 [[package]]
 name = "download-cef"
 version = "2.3.0"
-source = "git+https://github.com/tasuren/cef-rs?branch=message-router-patch#e61fed1564249e59aaff714333cda7832efdb5d4"
+source = "git+https://github.com/tasuren/cef-rs?branch=message-router-patch-demo#e61fed1564249e59aaff714333cda7832efdb5d4"
 dependencies = [
  "bzip2",
  "clap",
@@ -1417,7 +1417,7 @@ dependencies = [
 [[package]]
 name = "tests_shared"
 version = "144.3.0+144.0.12"
-source = "git+https://github.com/tasuren/cef-rs?branch=message-router-patch#e61fed1564249e59aaff714333cda7832efdb5d4"
+source = "git+https://github.com/tasuren/cef-rs?branch=message-router-patch-demo#e61fed1564249e59aaff714333cda7832efdb5d4"
 dependencies = [
  "cef",
  "glib",
