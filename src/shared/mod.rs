@@ -1,5 +1,4 @@
 use cef::*;
-use tests_shared::common::client_app::ProcessType;
 
 pub mod app_browser_impl;
 pub mod app_renderer_impl;
@@ -7,9 +6,12 @@ pub mod client_impl;
 pub mod platform;
 pub mod resource_util;
 
-use crate::shared::{
-    app_browser_impl::{BrowserApp, BrowserProcessHandlerImpl},
-    app_renderer_impl::{RenderProcessHandlerImpl, RendererApp},
+use crate::{
+    shared::{
+        app_browser_impl::{BrowserApp, BrowserProcessHandlerImpl},
+        app_renderer_impl::{RenderProcessHandlerImpl, RendererApp},
+    },
+    tests_shared::process_type::ProcessType,
 };
 
 #[cfg(target_os = "macos")]

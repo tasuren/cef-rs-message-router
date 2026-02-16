@@ -2,7 +2,8 @@ use cef::{
     ResourceHandler,
     wrapper::{resource_manager::get_mime_type, stream_resource_handler::StreamResourceHandler},
 };
-use tests_shared::browser::resource_util::get_binary_resource_reader;
+
+use crate::tests_shared::resource_util::get_binary_resource_reader;
 
 pub const TEST_ORIGIN: &str = "https://example.com/";
 

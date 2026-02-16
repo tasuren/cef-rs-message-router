@@ -8,7 +8,6 @@ function sendMessage() {
   // Results in a call to the OnQuery method in client_impl.cc.
   window.cefQuery({
     request: 'MessageRouterTest:' + document.getElementById("message").value,
-    persistent: false, // Default is not provided from cef-rs.
     onSuccess: function(response) {
       document.getElementById('result').value = 'Response: '+response;
     },

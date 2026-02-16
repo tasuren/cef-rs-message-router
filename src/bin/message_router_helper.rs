@@ -1,6 +1,8 @@
 use cef::{args::Args, *};
-use message_router_lib::shared::app_renderer_impl::{RenderProcessHandlerImpl, RendererApp};
-use tests_shared::common::client_app::ProcessType;
+use message_router_lib::{
+    shared::app_renderer_impl::{RenderProcessHandlerImpl, RendererApp},
+    tests_shared::process_type::ProcessType,
+};
 
 fn main() {
     let args = Args::new();

@@ -1,19 +1,31 @@
-# cef-rs-message-router
+# cef-rs message_router
 
 Rust port of CEF's official ["message_router" example](https://github.com/chromiumembedded/cef-project/tree/master/examples/message_router)
 implementation.
 It demonstrates how to create JavaScript bindings using CefMessageRouter
 while providing a practical sample for the cef-rs ecosystem.
 
-Currently, this port has only been confirmed to work on macOS.
+Currently, this port has only been confirmed to work on macOS and Linux with Xorg.
 
 ## Usage
+
+### macOS
 
 1. [Install Shared CEF Binaries](https://github.com/tauri-apps/cef-rs/tree/dev?tab=readme-ov-file#install-shared-cef-binaries)
 2. [Set Environment Variables](https://github.com/tauri-apps/cef-rs/tree/dev?tab=readme-ov-file#set-environment-variables)
 3. `cargo run --bin bundle` will create the application bundle on `./target/bundle/message_router.app`
 
+### Linux
+
+1. [Install Shared CEF Binaries](https://github.com/tauri-apps/cef-rs/tree/dev?tab=readme-ov-file#install-shared-cef-binaries)
+2. [Set Environment Variables](https://github.com/tauri-apps/cef-rs/tree/dev?tab=readme-ov-file#set-environment-variables)
+3. Verify that the `chrome-sandbox` in the CEF binaries folder has the appropriate permissions.
+   Make sure that the `chrome-sandbox` is owned by root and has mode 4755.
+4. `cargo run --bin message_router` will open this application.
+
 ## Acknowledgments
+
+This software is based on these works.
 
 - [Original C++ implementation](https://github.com/chromiumembedded/cef-project/tree/master/examples/message_router)
 - [cef-rs' cefsimple example](https://github.com/tauri-apps/cef-rs/tree/dev/examples/cefsimple)
