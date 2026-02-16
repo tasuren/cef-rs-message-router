@@ -33,6 +33,7 @@ tests_shared = { git = "https://github.com/tasuren/cef-rs", branch = "message-ro
 # tests_shared = { git = "https://github.com/tauri-apps/cef-rs", rev = "67387c7f27e33ba8d2a76885e91a776894df843d" }
 
 clap = "4.5"
+anyhow = "1"
 
 [target.'cfg(target_os = "macos")'.dependencies]
 objc2 = "0.6.3"
