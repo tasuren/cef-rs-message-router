@@ -1,3 +1,5 @@
+// This bin crate is derived from cef-rs' bundle-cef-app: https://github.com/tauri-apps/cef-rs/tree/dev/cef/src/bin/bundle-cef-app
+
 #[cfg(target_os = "macos")]
 mod mac;
 

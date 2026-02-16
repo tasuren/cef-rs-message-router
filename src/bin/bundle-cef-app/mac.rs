@@ -1,3 +1,5 @@
+// This file is derived from here: https://github.com/tauri-apps/cef-rs/blob/dev/cef/src/bin/bundle-cef-app/mac.rs
+
 use cef::build_util::mac::*;
 use clap::Parser;
 use semver::Version;
