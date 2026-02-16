@@ -15,9 +15,10 @@ Currently, this port has only been confirmed to work on macOS.
 
 ## Acknowledgments
 
-- Original C++ implementation: https://github.com/chromiumembedded/cef-project/tree/master/examples/message_router
-- cef-rs' cefsimple example: https://github.com/tauri-apps/cef-rs/tree/dev/examples/cefsimple
-- cef-rs' tests_shared utilities: https://github.com/tauri-apps/cef-rs/tree/dev/examples/tests_shared
+- [Original C++ implementation](https://github.com/chromiumembedded/cef-project/tree/master/examples/message_router)
+- [cef-rs' cefsimple example](https://github.com/tauri-apps/cef-rs/tree/dev/examples/cefsimple)
+- [cef-rs' tests_shared utilities](https://github.com/tauri-apps/cef-rs/tree/dev/examples/tests_shared)
+- [cef-rs' bundle tool](https://github.com/tauri-apps/cef-rs/tree/dev/cef/src/bin/bundle-cef-app)
 
 ## License
 
