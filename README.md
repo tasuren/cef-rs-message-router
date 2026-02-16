@@ -13,7 +13,7 @@ Currently, this port has only been confirmed to work on macOS and Linux with Xor
 
 1. [Install Shared CEF Binaries](https://github.com/tauri-apps/cef-rs/tree/dev?tab=readme-ov-file#install-shared-cef-binaries)
 2. [Set Environment Variables](https://github.com/tauri-apps/cef-rs/tree/dev?tab=readme-ov-file#set-environment-variables)
-3. `cargo run --bin bundle` will create the application bundle on `./target/bundle/message_router.app`
+3. `cargo run --bin bundle-cef-app -- message_router -o target` will create the application bundle on `./target/message_router.app`
 
 ### Linux
 
